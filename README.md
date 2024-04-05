@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/18238152/235517763-5ee7fe21-87e7-414f-
 
 ## 使用须知
 
-如不需要 媒体库 鼠标悬浮 后居中显示库名, 请更改 static\css\style.css 文件内 第 37 行
+如不需要 媒体库 鼠标悬浮 后居中显示库名, 请更改 static\css\style.css 文件内 第 37 行(已改)
 
 ## 使用方法
 
@@ -32,7 +32,7 @@ _无需使用插件, 直接部署至服务端, 用户无缝使用_
     # 注意: 需要能访问的上Github的环境, 如果不懂 请在群内@我留言
     # EmbyServer 为容器名, 如果你的容器名不是这个 请改成正确的!
     # 参考教程(非官方): https://mj.tk/2023/07/Emby
-    docker exec EmbyServer /bin/sh -c 'cd /system/dashboard-ui && wget -O - https://tinyurl.com/2p97xcpd | sh'
+    docker exec emby /bin/sh -c 'cd /system/dashboard-ui && wget -O - https://raw.githubusercontent.com/MaxLee456/emby-crx/master/script.sh | sh'
 
     # 正常版
     # 参考教程(非官方): https://cangshui.net/5167.html
